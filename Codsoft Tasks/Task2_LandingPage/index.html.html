@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixel Launchpad — Landing Page</title>
+    <meta name="description" content="A motion-driven landing page experience crafted with bold CSS and playful interactions." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scene" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">Pixel Launchpad</a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#pricing">Launch</a>
+          <a href="#contact">Signal</a>
+        </nav>
+        <a class="btn btn-ghost" href="#contact">Join the Orbit</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Live Prototype</span>
+            <h1>Launch your idea into a luminous web experience.</h1>
+            <p class="subtitle">A hypercharged landing page built with motion, glass, and cosmic color — nothing basic, everything bold.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#features">Explore the Lab</a>
+              <a class="btn btn-ghost" href="#contact">Send a Signal</a>
+            </div>
+            <div class="hero-notes">
+              <span>✨ Fluid animated hero</span>
+              <span>⚡ Neon glass layers</span>
+              <span>🌌 Responsive pixel system</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="orb-wrapper">
+              <div class="orb">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="spark"></div>
+                <div class="core"></div>
+              </div>
+              <div class="glow-ring"></div>
+            </div>
+            <div class="screen">
+              <div class="screen-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="screen-content">
+                <p class="screen-text">Pixel Launchpad — motion-first interface</p>
+                <div class="meter"><span style="width: 92%"></span></div>
+                <div class="chip-row">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Motion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2 class="section-title">What makes this different?</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Liquid Motion</h3>
+              <p>Animated gradients, glowing orbits, and subtle rhythm keep the page alive.</p>
+            </article>
+            <article class="card">
+              <h3>Glass & Glow</h3>
+              <p>Frosted layers and neon highlights create depth without a single image asset.</p>
+            </article>
+            <article class="card">
+              <h3>Responsive Spark</h3>
+              <p>Designed to look sharp on every screen from desktop canvases to pocket devices.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="highlight-band">
+        <div class="container highlight-inner">
+          <div>
+            <h2>Ready to turn your page into a launch experience?</h2>
+            <p>Stand out with motion-led design, bold color, and an interface that feels alive.</p>
+          </div>
+          <a class="btn btn-accent" href="#contact">Board the Launchpad</a>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <div class="contact-header">
+          <div>
+            <p class="eyebrow">Signal Center</p>
+            <h2>Let’s build something unforgettable.</h2>
+          </div>
+          <p>Send a quick message and we’ll reply with landing page ideas that feel different.</p>
+        </div>
+        <form class="contact-form" action="#" onsubmit="return false;">
+          <label>
+            <span class="sr-only">Your email</span>
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span class="sr-only">Message</span>
+            <textarea placeholder="Tell us your idea" rows="4" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Pixel Launchpad. All rights reserved.</p>
+        <nav class="footer-nav">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
